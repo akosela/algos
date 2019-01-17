@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func binSearch(s []int, item int) int {
+func binSearch(s []int, item int) (int) {
 	low := 0
 	high := len(s) - 1
 
@@ -25,6 +25,6 @@ func binSearch(s []int, item int) int {
 
 func main() {
 	s := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	fmt.Println(s[4])
-	fmt.Println(binSearch(s, 5))
+	fmt.Println(s)
+	fmt.Println(binSearch(s, 7))
 }
