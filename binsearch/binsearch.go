@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func bin_search(s []int, item int) (int) {
+func bin_search(s []int, item int) int {
 	low := 0
 	high := len(s) - 1
 
@@ -15,7 +15,7 @@ func bin_search(s []int, item int) (int) {
 			return mid
 		}
 		if guess > item {
-			high = mid -1
+			high = mid - 1
 		} else {
 			low = mid + 1
 		}
