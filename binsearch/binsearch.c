@@ -10,14 +10,12 @@ int bin_search(int a[], int item)
 	while (low <= high) {
 		mid = (low + high) / 2;
 		guess = a[mid];
-		if (guess == item) {
+		if (guess == item)
 			return mid;
-		}
-		if (guess > item) {
+		if (guess > item)
 			high = mid - 1;		
-		} else {
+		else
 			low = mid + 1;
-		}
 	}
 	return -1;
 }
